@@ -194,6 +194,7 @@
         //播放
         function play(){
             pic.src = data[index].al.picUrl;
+            audio.src ='http://music.163.com/song/media/outer/url?id='+data[index].id+'.mp3';
             //播放音乐
             audio.play();
             // 播放按钮变暂停
