@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>立方体</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        margin: 50px auto;
+        position: relative;
+        transform-style:preserve-3d;
+        transform: rotateX(20deg) rotateY(20deg);
+        animation:rotate 3s alternate  linear infinite;
+    }
+    .box .font,.behind,.left,.right,.top,.bottom{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transition: all 1s;
+    }
+    .infont,.inbehind,.inleft,.inright,.intop,.inbottom{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+
+    }
+
+    /*前面*/
+    .box:hover div:nth-of-type(1){
+        transform: translateZ(100px);
+    }
+    /*后面*/
+    .box:hover div:nth-of-type(2){
+        transform:  rotateY(180deg) translateZ(100px);
+    }
+    /*左面*/
+    .box:hover div:nth-of-type(3){
+        transform:  rotateY(-90deg) translateZ(100px);
+    }
+    /*右面*/
+    .box:hover div:nth-of-type(4){
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    /*上面*/
+    .box:hover div:nth-of-type(5){
+        transform: rotateX(90deg) translateZ(100px);
+    }
+    /*下面*/
+    .box:hover div:nth-of-type(6){
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+
+
+
+    @keyframes rotate{
+        0%{
+            transform: rotateX(20deg) rotateY(20deg);
+        }
+        100%{
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+    }
+    .font{
+        background-color: rgba(255, 158, 112, 0.8);
+        transform:  translateZ(50px);
+        background-image: url("folat/281.jpg");
+        background-size:100px 100px;
+    }
+    .behind{
+        background-color: rgba(255, 24, 39, 0.8);
+        transform: rotatey(180deg) translateZ(50px);
+        background-image: url("folat/282.jpg");
+        background-size:100px 100px
+    }
+    .left{
+        background-color: rgba(86, 131, 255, 0.8);
+        transform: rotatey(-90deg) translateZ(50px);
+        background-image: url("folat/283.jpg");
+        background-size:100px 100px
+    }
+    .right{
+        background-color: rgba(255, 10, 232, 0.8);
+        transform: rotatey(90deg) translateZ(50px);
+        background-image: url("folat/284.jpg");
+        background-size:100px 100px
+    }
+    .top{
+        background-color: rgba(63, 255, 158, 0.8);
+        transform: rotateX(90deg) translateZ(50px);
+        background-image: url("folat/285.jpg");
+        background-size:100px 100px
+    }
+    .bottom{
+        background-color: rgba(58, 252, 255, 0.8);
+        transform: rotateX(-90deg) translateZ(50px);
+        background-image: url("folat/286.jpg");
+        background-size:100px 100px
+    }
+
+
+
+
+    .infont{
+        background-color: rgba(255, 158, 112, 0.8);
+        transform:  translateZ(-25px);
+        background-size:50px 50px;
+    }
+    .inbehind{
+        background-color: rgba(255, 24, 39, 0.8);
+        transform: rotatey(-180deg) translateZ(-25px);
+        background-size:50px 50px
+    }
+    .inleft{
+        background-color: rgba(86, 131, 255, 0.8);
+        transform: rotatey(-90deg) translateZ(25px);
+        background-size:50px 50px
+    }
+    .inright{
+        background-color: rgba(255, 10, 232, 0.8);
+        transform: rotatey(90deg) translateZ(25px);
+        background-size:50px 50px
+    }
+    .intop{
+        background-color: rgba(63, 255, 158, 0.8);
+        transform: rotateX(90deg) translateZ(25px);
+        background-size:50px 50px
+    }
+    .inbottom{
+        background-color: rgba(58, 252, 255, 0.8);
+        transform: rotateX(-90deg) translateZ(25px);
+        background-size:50px 50px
+    }
+
+    </style>
+</head>
+<body>
+    <audio src="folat/MoreanP - 忆夏思乡.mp3"    autoplay="autoplay" loop="loop"></audio>
+    <div class="box">
+        <div class="font"></div>
+        <div class="behind"> </div>
+        <div class="left"> </div>
+        <div class="right"> </div>
+        <div class="top"></div>
+        <div class="bottom"> </div>
+
+        <div class="infont">里前</div>
+        <div class="inbehind">里后</div>
+        <div class="inleft">里左</div>
+        <div class="inright">里右</div>
+        <div class="intop">里上</div>
+        <div class="inbottom">里下</div>
+    </div>
+</body>
+</html>
