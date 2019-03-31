@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+.box{
+    width: 1000px;
+    padding: 20px;
+    border: 1px solid white;
+    margin: 50px auto;
+    color: white;
+
+}
+.ctr-box{
+    width: 100%;
+    display: flex;
+}
+.ctr-pic{
+
+    width: 150px;
+}
+.ctr-pic img{
+    height: 150px;
+    width: 100%;
+    border-radius: 50%;
+}
+.ctr-body{
+    width: 350px;
+
+    height: 150px;
+}
+.bar{
+    width: 200px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 15px;
+
+}
+.total{
+    width: 200px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+.now{
+    width: 0px;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.ctr-bar{
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background-color: gray;
+    position: absolute;
+    top: -3px;
+    left: 0px;
+}
+.singer{
+    margin: 10px;
+}
+.time span{
+    font-size: 13px;
+
+}
+.time{
+    position: absolute;
+    top: -12px;
+    right: -100px;
+
+
+}
+.ctr-btn{
+    display: flex;
+    margin-top: 50px;
+}
+.ctr-btn div{
+    background: url("../folat/002.png")  no-repeat;
+    background-size: 300%;
+}
+.ctr-btn .last{
+    width: 34px;
+    height: 17px;
+    background-position-y: -23px;
+    margin-left: 15px;
+}
+.ctr-btn .start{
+    width: 30px;
+    height: 19px;
+    background-position-y: -1px;
+    background-position-x: 10px;
+
+}
+.ctr-btn .next{
+    width: 34px;
+    height:17px;
+    background-position-y: -40px;
+    margin-left: 15px;
+}
+.ctr-btn .mode{
+    width: 34px;
+    height:18px;
+    background-position-y: -159px;
+    margin-left: 15px;
+}
+.ctr-btn .volume{
+    width: 34px;
+    height:17px;
+    background-position-y: -111px;
+    margin-left: 15px;
+}
+.list-box{
+    margin-top: 5px;
+
+}
+.list-box li{
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: thin dashed gray;
+}
+.bar-box{
+    width: 200px;
+    height: 4px;
+}
+.active{
+    background-color: gray;
+}
