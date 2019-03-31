@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精灵图</title>
+</head>
+<style>
+ * {
+     margin: 0px;
+     padding: 0px;
+ }
+    li{
+        list-style: none;
+        height: 70px;
+        width: 70px;
+        float: left;
+        border:1px solid black;
+        margin-bottom: -1px;
+        margin-right: -1px;
+    }
+    .body{
+        width: 288px;
+        margin: 50px auto;
+    }
+    ul{
+        height: 288px;
+        width: 288px;
+    }
+    li p {
+       text-align: center;
+    }
+    span{
+        display: block;
+        width: 24px;
+        height: 30px;
+        margin: 0px auto;
+        background: url("folat/1.png");
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <div class="body">
+        <ul>
+            <li>
+                <span></span>
+                <p>充话费</p>
+            </li>
+            <li>
+                <span></span>
+                <p>旅行</p>
+            </li>
+            <li>
+                <span></span>
+                <p>车险</p>
+            </li>
+            <li>
+                <span></span>
+                <p>游戏</p>
+            </li>
+            <li>
+                <span></span>
+                <p>彩票</p>
+            </li>
+            <li>
+                <span></span>
+                <p>电影</p>
+            </li>
+            <li>
+                <span></span>
+                <p>酒店</p>
+            </li>
+            <li>
+                <span></span>
+                <p>理财</p>
+            </li>
+            <li>
+                <span></span>
+                <p>找服务</p>
+            </li>
+            <li>
+                <span></span>
+                <p>演出</p>
+            </li>
+            <li>
+                <span></span>
+                <p>水煤电</p>
+            </li>
+            <li>
+                <span></span>
+                <p>火车票</p>
+            </li>
+        </ul>
+    </div>
+<script>
+    var spans = document.querySelectorAll("span")
+    for (var i = 0;i<spans.length;i++){
+        spans[i].style.backgroundPositionY=i * -44 + 'px';
+    }
+</script>
+</body>
+</html>
